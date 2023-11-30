@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>實習作業一</title>
+  <!-- 引用 DataTable CDN -->
+<link rel="stylesheet" type="text/css" href=" https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+<!-- jQuery and DataTables JS -->
+  
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+
+</head>
+
+  <!-- 滿版背景圖 -->
+  <style>
+    body {
+      background-image: url("https://scontent.ftpe4-2.fna.fbcdn.net/v/t39.30808-6/295063052_5534875056533241_5703845673198924848_n.jpg?stp=dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=da31f3&_nc_ohc=WKHOUzi-k8kAX-Nbn8G&_nc_ht=scontent.ftpe4-2.fna&oh=00_AfDVTZ3qUcROVOxXhE7ZJm81ZaCtd9FiLTI5657Omajcpg&oe=6453765C");
+      background-size: cover;
+      background-repeat: no-repeat;
+    
+
+    } 
+
+    
+   
+  </style>
+
+
+  <!-- CSS 設定 -->
+  <style>
+    /* 表格外 CSS */
+    div.dataTables_wrapper {
+      margin-left: 200px;
+      margin-right: 200px;
+      margin-top: 50px;
+      border: 1px solid black;
+      background-color: rgba(255, 255, 255, 0.7);
+      box-shadow: 10px 10px 20px #888888;
+    }
+
+    /* 表格內 CSS */
+    table.dataTable {
+      padding-top:20px;
+      padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 表格 -->
+  
+  <table id="myTable" class="display">
+    
+    <thead>
+      <tr>
+        <th class="text-center"style="text-align: center;"><h1 >Against The Current</h1></th>
+      </tr>
+
+      
+      <tr>
+        <th>歌曲</th>
+        <th>收錄專輯</th>
+        <th>發行時間</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Closer, Faster</td>
+        <td>The Acoustic Sessions</td>
+        <td>2014年11月27日</td>
+      </tr>
+
+      <tr>
+        <td>Talk</td>
+        <td>Gravity</td>
+        <td>2015年7月10日</td>
+      </tr>
+      
+      <tr>
+        <td> Runaway</td>
+        <td>In Our Bones</td>
+        <td>2016年5月20日</td>
+      </tr>
+      
+      <tr>
+        <td>Running With The Wild Things</td>
+        <td>In Our Bones</td>
+        <td>2016年5月20日</td>
+      </tr>
+      
+      <tr>
+        <td>Wasteland</td>
+        <td>In Our Bones</td>
+        <td>2016年5月20日</td>
+      </tr>
+      
+      <tr>
+        <td>Young & Relentless</td>
+        <td>In Our Bones</td>
+        <td>2016年5月20日</td>
+      </tr>
+
+      <tr>
+        <td>Almost Forgot</td>
+        <td>Past Lives</td>
+        <td>2018年9月28日</td>
+      </tr>
+
+      <tr>
+        <td>Strangers Again</td>
+        <td>Past Lives</td>
+        <td>2018年9月28日</td>
+      </tr>
+
+      <tr>
+        <td>Personal</td>
+        <td>Past Lives</td>
+        <td>2018年9月28日</td>
+      </tr>
+
+      <tr>
+        <td>Voices</td>
+        <td>Past Lives</td>
+        <td>2018年9月28日</td>
+      </tr>
+
+      <tr>
+        <td> Not Over You</td>
+        <td>非專輯單曲</td>
+        <td>2014年11月27日</td>
+      </tr>
+
+      <tr>
+        <td>Guessing</td>
+        <td>非專輯單曲</td>
+        <td>2013年</td>
+      </tr>
+
+      <tr>
+        <td>I Wanna Get Better</td>
+        <td>非專輯單曲</td>
+        <td>2014年</td>
+      </tr>
+
+      <tr>
+        <td>Outsiders</td>
+        <td>非專輯單曲</td>
+        <td>2015年</td>
+      </tr>
+
+      <tr>
+        <td>Legends Never Die</td>
+        <td>非專輯單曲</td>
+        <td>2017年</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- DataTable 初始化 -->
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#myTable').DataTable();
+    });
+  </script>
+
+  
+
+</body>
+</html>
